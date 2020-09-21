@@ -41,4 +41,4 @@ jobs:
         run: mv build/index.html build/200.html
 
       - name: Deploy on surge
-        run: surge ./ shoestore_knowmi.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build shoestore_knowmi.surge.sh --token ${{ secrets.SURGE_TOKEN }}
